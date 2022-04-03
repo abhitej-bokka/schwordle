@@ -94,8 +94,12 @@ scene.add(pointLight, ambientLight, ambientLight2);
 
 
 function addStar() {
- const geometry = new THREE.SphereGeometry(0.2, 24, 24);
- const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+ //const geometry = new THREE.SphereGeometry(0.2, 24, 24);
+ //const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+ //0x00ff95
+ const geometry = new THREE.RoundedBoxGeometry( 0.2, 0.2, 0.2, 0.12, 0.04 );
+ const material = new THREE.MeshStandardMaterial({ color: 0x00ff95 });
+ 
  const star = new THREE.Mesh(geometry, material);
  const [x, y, z] = Array(3)
    .fill()
