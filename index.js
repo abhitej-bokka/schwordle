@@ -63,7 +63,7 @@ const materialbox = new THREE.MeshStandardMaterial({color: 0x00ff95});
 const greenBox = new THREE.Mesh(geometrybox, materialbox);
 scene.add(greenBox);
 
-greenBox.position.setX(13.5);
+greenBox.position.setX(12);
 
 
 // ORBIT DONUT
