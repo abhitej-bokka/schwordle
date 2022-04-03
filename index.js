@@ -58,7 +58,7 @@ scene.add(torus);
 
 // Green BOX
 
-const geometrybox = new RoundedBoxGeometry( 10, 10, 10, 6, 2 );
+const geometrybox = new RoundedBoxGeometry( 2, 2, 2, 1.2, 0.4 );
 const materialbox = new THREE.MeshStandardMaterial({color: 0x00ff95});
 const greenBox = new THREE.Mesh(geometrybox, materialbox);
 scene.add(greenBox);
