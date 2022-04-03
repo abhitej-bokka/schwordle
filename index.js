@@ -1,6 +1,7 @@
 // import "./style.css";
 import * as THREE from "https://unpkg.com/three@0.127.0/build/three.module.js";
 import { OrbitControls } from "https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js";
+import { RoundedBoxGeometry } from './threejs/examples/jsm/geometries/RoundedBoxGeometry.js';
 
 var theta = 0;
 
@@ -53,6 +54,16 @@ const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
 //const material = new THREE.MeshStandardMaterial({color: 0x479eff});
 const torus = new THREE.Mesh(geometry, donutMaterial);
 scene.add(torus);
+
+
+// Green BOX
+
+const geometrybox = new RoundedBoxGeometry( 10, 10, 10, 6, 2 );
+const materialbox = new THREE.MeshStandardMaterial({color: 0x00ff95});
+const greenBox = new THREE.Mesh(geometrybox, materialbox);
+scene.add(greenBox);
+
+greenBox.position.setX(13.5);
 
 
 // ORBIT DONUT
