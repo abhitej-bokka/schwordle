@@ -57,14 +57,14 @@ scene.add(torus);
 
 
 // Green BOX
-
+/*
 const geometrybox = new THREE.RoundedBoxGeometry( 2, 2, 2, 1.2, 0.4 );
 const materialbox = new THREE.MeshStandardMaterial({color: 0x00ff95});
 const greenBox = new THREE.Mesh(geometrybox, materialbox);
 scene.add(greenBox);
 
 greenBox.position.setX(12);
-
+*/
 
 // ORBIT DONUT
 const oradius = 0.5, otube = 0.28;
